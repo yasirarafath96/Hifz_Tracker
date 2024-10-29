@@ -6,7 +6,11 @@ const RootLayout = () => {
 
   return (
     <Stack>
-      {isLogin ? <Stack.Screen name="(main)/index" /> : <Stack.Screen name="(auth)/index" />}
+      {isLogin ? (
+        <Stack.Screen name="(main)/index" options={{ headerShown: false }} />
+      ) : (
+        <Stack.Screen name="(auth)/index" options={{ headerShown: false }} />
+      )}
     </Stack>
   );
 };
