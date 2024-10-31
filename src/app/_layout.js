@@ -7,9 +7,9 @@ const RootLayout = () => {
   return (
     <Stack>
       {isLogin ? (
-        <Stack.Screen name="(main)/index" options={{ headerShown: false }} />
+        <Stack.Screen name="(main)" options={{ headerShown: true, title: 'main' }} />
       ) : (
-        <Stack.Screen name="(auth)/index" options={{ headerShown: false }} />
+        <Stack.Screen name="(auth)" options={{ headerShown: true, title: 'auth' }} />
       )}
     </Stack>
   );
